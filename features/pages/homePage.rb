@@ -1,6 +1,7 @@
 require_relative '../actions/Click.rb'
 require_relative '../actions/Find.rb'
 require_relative '../actions/Type.rb'
+require_relative '../actions/Scroll.rb'
 
 class HomePage
 
@@ -87,6 +88,15 @@ class HomePage
    def accessBookDetail(details)
      @details = details
      @@aClick.clickAccessibilityId(@details)
+   end
+
+   def logout()
+     @@aClick.clickAccessibilityId("Settings")
+     #@@aClick.clickXpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.TextView[2]
+#{}")
+     #@@aClick.clickId("org.nypl.labs.OpenEbooks.app:id/accountTitle")
+     @@aClick.clickId("org.nypl.labs.OpenEbooks.app:id/authBasicLogin")
+     sleep 6
    end
       
    def verifyEbook
