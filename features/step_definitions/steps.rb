@@ -43,6 +43,14 @@ And('user browses specific category') do
   home.browseSpecificCategory()
 end
 
+And('user browses to settings') do
+  home.clickAccessibility("Settings")
+end
+
+And('user logs out') do
+  home.logout()
+end
+
 And('user scrolls to description') do
   home.scrollToDescription()
 end
