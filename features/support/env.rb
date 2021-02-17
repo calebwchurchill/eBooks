@@ -10,10 +10,10 @@ desired_caps = {
       newCommandTimeout: 3600,
       autoGrantPermissions: true,
       plartformVersion: "11",
-    adbExecTimeout: "90000",
-    disableAndroidWatchers: true,
-    ignoreHiddenApiPolicyError: true
-    
+	  adbExecTimeout: "90000",
+	  disableAndroidWatchers: true,
+	  ignoreHiddenApiPolicyError: true
+	  
      },
       appium_lib: {
           server_url: 'http://localhost:4723/wd/hub'
